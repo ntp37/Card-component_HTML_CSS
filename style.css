@@ -1,0 +1,159 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);  /* Primary */
+    --Bright-blue: hsl(245, 75%, 52%); /* Primary */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--Pale-blue);
+    background-image:url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* width: 1440px; */
+}
+.card-main h1 {
+    font-weight: 900;
+}
+.hero-img img {
+    border-radius: 20px 20px 0px 0px;
+    padding-bottom: 30px;
+}
+.card-main {
+    border-radius: 20px;
+    display: grid;
+    text-align: center;
+    background-color: white;
+}
+.card-main p {
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+    font-size: 16px;
+}
+.plan-box {
+    display: flex;
+    box-sizing: border-box;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    margin: 20px auto 20px auto;
+    width: 350px;
+    height: 95px;
+}
+.icon {
+    height: 50px;
+    width: 55px;
+    padding: 25px 5px 25px 5px;
+    margin-left: 15px;
+}
+.text-plan {
+    width: 100px;
+    height: 95px;
+    margin-left: 11px;  
+}
+#annual {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+#price {
+    margin-top: 5px;
+    font-size: 16px;
+}
+.text-change {
+    height: 25px;
+    width: 60px;
+    margin-left: 90px;
+    margin-top: 35px;
+}
+.text-change a {
+    color: hsl(245, 61%, 53%);
+    font-size: 13px;
+    font-weight: bold;
+}
+.button-pay{
+    background-color: var(--Bright-blue);
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 700;
+    color: white;
+    font-size: 13px;
+    width: 350px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px;
+    box-shadow: 1px 22px 10px var(--Very-pale-blue);
+    margin-left: 50px;
+}
+.cancel-order {
+    margin-top: 30px;
+    padding-bottom: 45px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.cancel-order a {
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+}
+@media (min-width: 1441px) and (max-width: 1920px) {
+    body {
+        background-size: contain;
+    }
+}
+@media only screen and (max-width: 450px) {
+    body {
+        width: 375px;
+        height: auto;
+        padding: 70px 30px 70px;
+        margin: 0 auto;
+    }
+    .card-main {
+        width: 100%;
+        padding: 0;
+        height: auto;
+    }
+    .card-main h1{
+        font-size: 1.5rem;
+    }
+    .card-main p{
+        font-size: 0.9rem;
+    }
+    #annual {
+        color: black;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 25px;
+    }
+    #price {
+        margin-top: 5px;
+        font-size: 0.9rem;
+    }
+    .hero-img img {
+        width: 100%;
+    }
+    .plan-box {
+        width: 80%;
+    }
+    .button-pay {
+        width: 80%;
+        margin-left: 30px;
+    }
+    .text-change {
+        height: 25px;
+        width: 60px;
+        margin-left: 10px;
+        margin-top: 35px;
+    }
+    .text-change a {
+        font-size: 0.8rem;
+    }
+}
